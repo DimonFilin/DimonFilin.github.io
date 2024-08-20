@@ -2,11 +2,29 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="DimonFilinCV" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DimonFilinCV</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #f0f0f0; /* Светлый фон */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: stretch; /* Растягиваем контейнер по высоте */
+            height: 100vh;
+        }
+        .container {
+            background-color: #fff; /* Фон контейнера */
+            width: 80%; /* Ширина контейнера */
+            max-width: 1200px; /* Максимальная ширина контейнера */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тень для контейнера */
+            padding: 20px;
+            border-radius: 0; /* Убираем скругление углов */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
         header {
             background-color: #333;
@@ -27,6 +45,7 @@
         }
         main {
             padding: 20px;
+            flex-grow: 1; /* Занимаем оставшееся пространство */
         }
         footer {
             background-color: #333;
@@ -37,28 +56,31 @@
     </style>
 </head>
 <body>
-    <header>
-        <h1>Header</h1>
-    </header>
-    <nav>
-        <a href="index.html">Главная</a>
-    </nav>
-    <main>
-        <section id="home">
-            <h2>Section home</h2>
-            <p>PPPPP</p>
-        </section>
-        <section id="about">
-            <h2>Section2</h2>
-            <p>PPPP</p>
-        </section>
-        <section id="contact">
-            <h2>Contacs</h2>
-            <p>PPPPP <a href="mailto:info@example.com">myEmail</a></p>
-        </section>
-    </main>
-    <footer>
-        <p>Footer</p>
-    </footer>
+    <div class="container">
+        <header>
+            <h1>Header</h1>
+        </header>
+        <nav>
+            <a href="index.html">Главная</a>
+        </nav>
+        <main>
+            <section id="home">
+                <h2>Section home</h2>
+                <p>PPPPP</p>
+            </section>
+            <section id="about">
+                <h2>Section2</h2>
+                <p>PPPP</p>
+                <p>PPPP</p>
+            </section>
+            <section id="contact">
+                <h2>Contacs</h2>
+                <p>PPPPP <a href="mailto:info@example.com">myEmail</a></p>
+            </section>
+        </main>
+        <footer>
+            <p>Footer</p>
+        </footer>
+    </div>
 </body>
 </html>
