@@ -1,52 +1,126 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #FFFCF5; /* Светлый фон */
+    background-color: #FFFCF5;
+    /* Светлый фон */
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
-    align-items: stretch; /* Растягиваем контейнер по высоте */
+    align-items: stretch;
+    /* Растягиваем контейнер по высоте */
     height: 100vh;
 }
+
 .container {
-    background-color: #F2E8C9; /* Фон контейнера */
-    width: 80%; /* Ширина контейнера */
-    max-width: 1200px; /* Максимальная ширина контейнера */
-   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  Тень для контейнера */
-    padding: 20px;
-    border-radius: 0; /* Убираем скругление углов */
+    background-color: #F2E8C9;
+    /* Фон контейнера */
+    width: 80%;
+    /* Ширина контейнера */
+    max-width: 1200px;
+    /* Максимальная ширина контейнера */
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  Тень для контейнера */
+   /* padding: 20px;*/
+    border-radius: 0;
+    /* Убираем скругление углов */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.home{
-    
-}
-.about{
 
-}
-.contact{
+.home {}
 
-}
+.about {}
+
+.contact {}
+
 header {
     background-color: #B39F7A;
     color: #fff;
     padding: 10px 0;
     text-align: center;
 }
+
 nav {
     background-color: #555;
     color: #fff;
     padding: 10px 0;
     text-align: center;
 }
+
 main {
     padding: 20px;
-    flex-grow: 1; /* Занимаем оставшееся пространство */
+    flex-grow: 1;
+    /* Занимаем оставшееся пространство */
 }
+
 footer {
     background-color: #B39F7A;
     color: #fff;
     padding: 10px 0;
     text-align: center;
+}
+
+
+/*Post info*/
+.posts-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* Выравнивание по левой стороне */
+    width: 100%;
+}
+
+.post1 {
+    display: flex;
+    align-items: flex-start;
+    /* Выравнивание по левой стороне */
+    width: 80%;
+    /* Задайте желаемую ширину для постов */
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    /* Добавлено для визуализации границ */
+    padding: 10px;
+    /* Добавлено для визуализации отступов */
+    background-color: #F2E8C9;
+    /* Фон контейнера */
+
+}
+
+.post2 {
+    display: flex;
+    align-items: flex-start;
+    /* Выравнивание по левой стороне */
+    width: 80%;
+    /* Задайте желаемую ширину для постов */
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    /* Добавлено для визуализации границ */
+    padding: 10px;
+    /* Добавлено для визуализации отступов */
+    background-color: #B39F7A;
+    /* Фон контейнера */
+}
+
+.post-img {
+    width: 200px;
+    /* Задайте желаемую ширину изображения */
+    height: 300px;
+    /* Задайте желаемую высоту изображения */
+    object-fit: contain;
+    margin-right: 20px;
+    background-color: #f0f0f0;
+    /* Добавлено для визуализации пустого пространства */
+}
+
+.post-content {
+    flex-grow: 1;
+}
+
+.post-title {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.post-description {
+    font-size: 1em;
 }
