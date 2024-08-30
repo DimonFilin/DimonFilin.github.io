@@ -11,34 +11,77 @@
 <body>
     <div class="container">
         <header>
+            <button data-href="githubRepositoriesru.html"  class="langSwitchButton">RU</button>
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    const langSwitchButton = document.querySelector('.langSwitchButton');
+            
+                    langSwitchButton.addEventListener('click', function() {
+                        const href = this.getAttribute('data-href');
+                        if (href) {
+                            window.location.href = href;
+                        }
+                    });
+                });
+            </script>
             <h1>Dmitriy Filimontsev CV</h1>
         </header>
         <nav>
-            <a href="../index.html">Main</a>
-            <a href="githubRepositories.html">My Github Repositories</a>
+            <a class="navA" href="../index.html">Main</a>
+            <a class="navB" href="githubRepositories.html">My Github Repositories</a>
         </nav>
         <main>
             <section class="home">
-                <h2>Some of my projects are in the form of individual posts, all repositories are available at link</h2>
+                <h2>Some of my projects are in the form of individual posts, all repositories are available at <a href="https://github.com/DimonFilin">link</a></h2>
+                <h1>If you want to test one of the applications (flutter) - the apk file is located in the folder with the package by this route: build\app\outputs\flutter-apk\app-release.apk </h1>
             </section>
             <section class="projects">
                 <h2>Posts:</h2>
                 <div class="posts-container">
                     <div class="post1">
-                        <img src="../assets/images/posts/counter/post.jpg" alt="Project Image 1" class="post-img">
+                        <img src="../assets/images/posts/cryptoapp/post.jpg" alt="Project Image 1" class="post-img">
                         <div class="post-content">
-                            <div class="post-title">Название проекта 1</div>
-                            <div class="post-description">Краткое описание проекта 1. Этот текст будет автоматически адаптироваться под размеры контейнера, обеспечивая читаемость и визуальное равновесие.</div>
+                            <div class="post-title">Crypto Currency App</div>
+                            <div class="post-description">On this application I took a course on flutter, here I used BloC architecture, remote repository by dio using singleton in Getx, logging by takler.</div>
+                            <a href="">Link on project</a>
                         </div>
                     </div>
+
                     <div class="post2">
-                        <img src="../assets/images/posts/counter/post.jpg" alt="Project Image 2" class="post-img">
+                        <img src="../assets/images/posts/timer/post.jpg" alt="Project Image 2" class="post-img">
                         <div class="post-content">
-                            <div class="post-title">Название проекта 2</div>
-                            <div class="post-description">Краткое описание проекта 2. Этот текст будет автоматически адаптироваться под размеры контейнера, обеспечивая читаемость и визуальное равновесие.</div>
+                            <div class="post-title">Timer</div>
+                            <div class="post-description">On this application I tried 3 implementations of states - GetX, BloC, No states - each has its pros and cons, tried each and learned how to build the structure of screens in future applications.</div>
+                            <a href="https://github.com/DimonFilin/Timer">Link on project</a>
                         </div>
                     </div>
-                    <!-- Добавьте больше постов по аналогии -->
+
+                    <div class="post1">
+                        <img src="../assets/images/posts/notes/post.jpg" alt="Project Image 3" class="post-img">
+                        <div class="post-content">
+                            <div class="post-title">Notes</div>
+                            <div class="post-description">The notes app I made using MySQL as a database, I wanted to make it an online database but no, turned out to be a local notes app.</div>
+                            <a href="https://github.com/DimonFilin/Notes-flutter-sqlLite">Link on project</a>
+                        </div>
+                    </div>
+
+                    <div class="post2">
+                        <img src="../assets/images/posts/counter/post.jpg" alt="Project Image 4" class="post-img">
+                        <div class="post-content">
+                            <div class="post-title">Counter</div>
+                            <div class="post-description">This simple app I made completely by myself, no tutorials, simple idea and native ui is all there is.</div>
+                            <a href="https://github.com/DimonFilin/Flutter-Counter">Link on project</a>
+                        </div>
+                    </div>
+
+                    <div class="post1">
+                        <img src="../assets/images/posts/calender/post.jpg" alt="Project Image 5" class="post-img">
+                        <div class="post-content">
+                            <div class="post-title">Calender</div>
+                            <div class="post-description">On this project I used packages from pub.dev for the first time, worked with themes, setting widget colors, etc.</div>
+                            <a href="https://github.com/DimonFilin/Simple-calender">Link on project</a>
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>

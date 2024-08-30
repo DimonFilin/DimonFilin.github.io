@@ -27,11 +27,11 @@ body {
     justify-content: space-between;
 }
 
-.home {}
-
-.about {}
-
-.contact {}
+.langSwitchButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
 
 header {
     background-color: #B39F7A;
@@ -47,10 +47,18 @@ nav {
     text-align: center;
 }
 
+.navA {
+    margin: 60px;
+}
+
+.navB{
+    margin: 10px;
+}
+
 main {
     padding: 20px;
     flex-grow: 1;
-    /* Занимаем оставшееся пространство */
+    background-color: #F2E8C9;
 }
 
 footer {

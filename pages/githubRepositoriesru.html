@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DimonFilinCV</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <button data-href="githubRepositories.html"  class="langSwitchButton">EN</button>
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    const langSwitchButton = document.querySelector('.langSwitchButton');
+            
+                    langSwitchButton.addEventListener('click', function() {
+                        const href = this.getAttribute('data-href');
+                        if (href) {
+                            window.location.href = href;
+                        }
+                    });
+                });
+            </script>
+            <h1>Dmitriy Filimontsev CV</h1>
+        </header>
+        <nav>
+            <a class="navA" href="indexru.html">Главная страница</a>
+            <a class="navB" href="githubRepositoriesru.html">Мои репозитории на Github</a>
+        </nav>
+        <main>
+            <section class="home">
+                <h2>Некоторые из моих проектов представлены в виде отдельных постов, все репозитории доступны по <a href="https://github.com/DimonFilin">ссылке</a></h2>
+                <h1>Если вы хотите протестировать одно из приложений (на флаттере) - апк файл находится в папке с прокетом по такому маршруту: build\app\outputs\flutter-apk\app-release.apk </h1>
+            </section>
+            <section class="projects">
+                <h2>Posts:</h2>
+                <div class="posts-container">
+                    <div class="post1">
+                        <img src="../assets/images/posts/cryptoapp/post.jpg" alt="Project Image 1" class="post-img">
+                        <div class="post-content">
+                            <div class="post-title">Crypto Currency App</div>
+                            <div class="post-description">Для этого приложения я взял курс по flutter, здесь я использовал архитектуру BloC, удаленное хранилище с помощью dio, используя singleton в Getx, логирование с помощью takler.</div>
+                            <a href="https://github.com/DimonFilin/Crypto-App-Flutter">Ссылка на репозиторий</a>
+                        </div>
+                    </div>
+
+                    <div class="post2">
+                        <img src="../assets/images/posts/timer/post.jpg" alt="Project Image 2" class="post-img">
+                        <div class="post-content">
+                            <div class="post-title">Timer</div>
+                            <div class="post-description">В этом приложении я попробовал 3 реализации состояний - GetX, BloC, No states - у каждой есть свои плюсы и минусы, попробовал каждую и узнал, как строить структуру экранов в будущих приложениях.</div>
+                            <a href="https://github.com/DimonFilin/Timer">Ссылка на репозиторий</a>
+                        </div>
+                    </div>
+
+                    <div class="post1">
+                        <img src="../assets/images/posts/notes/post.jpg" alt="Project Image 3" class="post-img">
+                        <div class="post-content">
+                            <div class="post-title">Notes</div>
+                            <div class="post-description">Приложение для заметок, которое я сделал, используя MySQL в качестве базы данных, я хотел сделать из него онлайн-базу данных, но нет, получилось локальное приложение для заметок.</div>
+                            <a href="https://github.com/DimonFilin/Notes-flutter-sqlLite">Ссылка на репозиторий</a>
+                        </div>
+                    </div>
+
+                    <div class="post2">
+                        <img src="../assets/images/posts/counter/post.jpg" alt="Project Image 4" class="post-img">
+                        <div class="post-content">
+                            <div class="post-title">Counter</div>
+                            <div class="post-description">Это простое приложение я сделал полностью самостоятельно, никаких руководств, простая идея и удобный ui - это все, что есть.</div>
+                            <a href="https://github.com/DimonFilin/Flutter-Counter">Ссылка на репозиторий</a>
+                        </div>
+                    </div>
+
+                    <div class="post1">
+                        <img src="../assets/images/posts/calender/post.jpg" alt="Project Image 5" class="post-img">
+                        <div class="post-content">
+                            <div class="post-title">Calender</div>
+                            <div class="post-description">В этом проекте я впервые использовал пакеты из pub.dev, работал с темами, устанавливал цвета виджетов и т.д.</div>
+                            <a href="https://github.com/DimonFilin/Simple-calender">Ссылка на репозиторий</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>Footer</p>
+        </footer>
+    </div>
+</body>
+
+</html>
