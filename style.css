@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #FFFCF5;
+    background-color: #f4f7f0;
     /* Светлый фон */
     margin: 0;
     padding: 0;
@@ -12,7 +12,7 @@ body {
 }
 
 .container {
-    background-color: #F2E8C9;
+    background-color: #E7F0DC;
     /* Фон контейнера */
     width: 80%;
     /* Ширина контейнера */
@@ -34,14 +34,14 @@ body {
 }
 
 header {
-    background-color: #B39F7A;
+    background-color: #729762;
     color: #fff;
     padding: 10px 0;
     text-align: center;
 }
 
 nav {
-    background-color: #555;
+    background-color: #658147;
     color: #fff;
     padding: 10px 0;
     text-align: center;
@@ -58,11 +58,11 @@ nav {
 main {
     padding: 20px;
     flex-grow: 1;
-    background-color: #F2E8C9;
+    background-color: #E7F0DC;
 }
 
 footer {
-    background-color: #B39F7A;
+    background-color: #729762;
     color: #fff;
     padding: 10px 0;
     text-align: center;
@@ -89,7 +89,7 @@ footer {
     /* Добавлено для визуализации границ */
     padding: 10px;
     /* Добавлено для визуализации отступов */
-    background-color: #F2E8C9;
+    background-color: #E7F0DC;
     /* Фон контейнера */
 
 }
@@ -105,7 +105,7 @@ footer {
     /* Добавлено для визуализации границ */
     padding: 10px;
     /* Добавлено для визуализации отступов */
-    background-color: #B39F7A;
+    background-color: #658147;
     /* Фон контейнера */
 }
 
@@ -116,7 +116,7 @@ footer {
     /* Задайте желаемую высоту изображения */
     object-fit: contain;
     margin-right: 20px;
-    background-color: #f0f0f0;
+    //background-color: #f0f0f0;
     /* Добавлено для визуализации пустого пространства */
 }
 
